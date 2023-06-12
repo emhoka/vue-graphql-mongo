@@ -5,9 +5,9 @@
                 <p class="font-semibold">{{ title }}</p>
             </slot>
         </label>
-        <input
-            class="placeholder-italic form-input w-full bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-100 focus:border-blue-100 block p-2.5 dark:placeholder-gray-400"
-            :id="id" :value="value" :name="name" :type="type" :placeholder="placeholder" :disabled="disabled" :required="required"/>
+      
+            <textarea class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
+            :id="id" :value="value" :name="name" :rows="rows" :placeholder="placeholder" :disabled="disabled" :required="required"></textarea>
     </div>
 </template>
    
@@ -15,16 +15,16 @@
 import { Vue, Component, Prop } from "vue-property-decorator";
 
 @Component
-export default class FormInput extends Vue {
+export default class TextaAreaComponent extends Vue {
     @Prop({ type: String, default: undefined }) readonly title?: string;
     @Prop({ type: String, default: undefined }) readonly id?: string;
     @Prop({ type: [String, Number], default: undefined }) readonly value?: string | number;
     @Prop({ type: String, default: undefined }) readonly name?: string;
     @Prop({ type: String, default: undefined }) readonly placeholder?: string;
-    @Prop({ type: String, default: "text" }) readonly type!: string;
     @Prop({ type: Boolean, default: false }) readonly invalid!: boolean;
     @Prop({ type: Boolean, default: false }) readonly disabled!: boolean;
     @Prop({ type: Boolean, default: false}) readonly required!: boolean;
+    @Prop({ type: Number, default: 4}) readonly rows!: number;
 }
 
 </script>

@@ -23,14 +23,14 @@
                         </div>
                         <div class="ml-3 text-sm">
                             <label for="terms" class="font-light text-gray-500 dark:text-gray-300">I accept the <a
-                                    class="font-medium text-indigo-500 hover:underline dark:text-blue-500" href="#">Terms and
-                                    Conditions</a></label>
+                                    class="font-medium text-indigo-500 hover:underline dark:text-blue-500" href="#"><router-link to="/userprofile" class="nav-link">Terms and
+                                    Conditions</router-link></a></label>
                         </div>
                     </div>
                     <ButtonComponent type="submit" buttonText="Create an account" />
                     <p class="text-sm font-light text-gray-500 dark:text-gray-400">
                         Already have an account? <a href="#"
-                            class="font-medium text-indigo-500 hover:underline dark:text-blue-500">Login here</a>
+                            class="font-medium text-indigo-500 hover:underline dark:text-blue-500"><router-link to="/signin" class="nav-link">Login here</router-link></a>
                     </p>
                 </form>
             </div>

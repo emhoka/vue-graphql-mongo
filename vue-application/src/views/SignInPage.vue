@@ -20,7 +20,7 @@
                     <ButtonComponent type="submit" buttonText="Sign In" />
                     <p class="text-sm font-light text-gray-500 dark:text-gray-400">
                         Don't have an account? <a href="#"
-                            class="font-medium text-indigo-500 hover:underline dark:text-blue-500">Create Account</a>
+                            class="font-medium text-indigo-500 hover:underline dark:text-blue-500"><router-link to="/" class="nav-link">Create Account</router-link></a>
                     </p>
                 </form>
             </div>

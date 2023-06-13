@@ -1,17 +1,16 @@
 <template>
-    <div class="min-h-screen p-6 bg-gray-100 flex items-center justify-center">
+    <div class="min-h-screen p-6 bg-indigo-500 flex items-center justify-center">
       <div class="container max-w-screen-lg mx-auto">
         <div>
-          <hr class="mb-6 border-b-1 border-blueGray-300">
-          <h2 class="font-semibold text-xl text-gray-600 mb-3">User Profile</h2>
+          <div class="bg-gray-50 rounded shadow-lg p-4 px-4 md:p-8 mb-6">
+            
+          <h2 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white mb-3">User Profile</h2>
 
           <hr class="mb-6 border-b-1 border-blueGray-300">
           <h2 class="font-semibold text-xl text-gray-600 mt-3">Eunice Mhoka</h2>
           <p class="text-gray-500 mb-6">Last Modified on </p>
 
-          <hr class="mb-6 border-b-1 border-blueGray-300">
-
-          <div class="bg-white rounded shadow-lg p-4 px-4 md:p-8 mb-6">
+          <hr class="mb-10 border-b-1 border-blueGray-300">
             <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-3">
               <div class="text-gray-600">
                 <p class="font-medium text-lg">Personal Details</p>

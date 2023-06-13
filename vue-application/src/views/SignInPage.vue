@@ -13,8 +13,8 @@
                         required="true" />
                     <div class="flex items-end">
                         <div class="text-sm">
-                            <a class="font-medium text-indigo-500 hover:underline dark:text-blue-500" href="#">Forget
-                                Password</a>
+                            <a class="font-medium text-indigo-500 hover:underline dark:text-blue-500" href="#"><router-link to="/resetpassword" class="nav-link"> Forget
+                                Password</router-link></a>
                         </div>
                     </div>
                     <ButtonComponent type="submit" buttonText="Sign In" />

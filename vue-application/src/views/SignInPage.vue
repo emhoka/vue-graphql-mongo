@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col bg-indigo-500 items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
         <div
-            class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+            class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700 animate__animated animate__rotateInDownLeft">
             <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
                 <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
                     Sign in to your account
@@ -13,14 +13,14 @@
                         required="true" />
                     <div class="flex items-end">
                         <div class="text-sm">
-                            <a class="font-medium text-indigo-500 hover:underline dark:text-blue-500" href="#">Forget
-                                Password</a>
+                            <a class="font-medium text-indigo-500 hover:underline dark:text-blue-500" href="#"><router-link to="/resetpassword" class="nav-link"> Forget
+                                Password</router-link></a>
                         </div>
                     </div>
                     <ButtonComponent type="submit" buttonText="Sign In" />
                     <p class="text-sm font-light text-gray-500 dark:text-gray-400">
                         Don't have an account? <a href="#"
-                            class="font-medium text-indigo-500 hover:underline dark:text-blue-500">Create Account</a>
+                            class="font-medium text-indigo-500 hover:underline dark:text-blue-500"><router-link to="/" class="nav-link">Create Account</router-link></a>
                     </p>
                 </form>
             </div>

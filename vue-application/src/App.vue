@@ -1,18 +1,13 @@
 <template>
-  <div id="app">
-    <SignUpPage />
+  <div class="font-raleway">
+    <router-view />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import SignUpPage from './views/SignUpPage.vue';
 
-@Component({
-  components: {
-    SignUpPage
-  },
-})
+@Component
 export default class App extends Vue {}
 </script>
 

@@ -2,11 +2,11 @@
     <div>
         <label>
             <slot name="title">
-                <p class="font-semibold">{{ title }}</p>
+                <p class="font-semibold text-md">{{ title }}</p>
             </slot>
         </label>
         <input
-            class="placeholder-italic form-input w-full bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-100 focus:border-blue-100 block p-2.5 dark:placeholder-gray-400"
+            class="placeholder-italic form-input w-full h-10 border mt-1 rounded px-4 bg-gray-50"
             :id="id" :value="value" :name="name" :type="type" :placeholder="placeholder" :disabled="disabled" :required="required"/>
     </div>
 </template>
